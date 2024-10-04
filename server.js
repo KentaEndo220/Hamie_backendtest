@@ -8,14 +8,13 @@ const userinfoApi = require("./api/userinfo");
 // DB config
 require("./libs/mongodb");
 
-// Sever configs
+// Sever configsss
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      
+    origin: [      
       "https://hamie-game-telegram.vercel.app/"
     ]
   })
